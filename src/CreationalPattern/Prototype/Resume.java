@@ -14,6 +14,7 @@ public class Resume implements Cloneable,Serializable{
 	private String name=null;
 	private String sex=null;
 	private String age=null;
+	//注意:Resume要序列化，要确保Resume中其他引用也要实现Serializable接口（即Experience也要实现序列化接口）
 	private Experience experience=new Experience(); //经历（复杂对象，非8种基本数据类型）
 	public Resume(){
 		
